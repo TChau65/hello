@@ -2,8 +2,6 @@ import pandas as pd
 
 
 def create_dictionary():
-    import pandas as pd
-
     # create a dictionary
     data = {'Name': ['John', 'Alice', 'Bob'],
         'Age': [25, 30, 35],
@@ -24,10 +22,18 @@ def create_two_dimensional_list():
 
     print(df)
 
+def load_csv_file(filename):
+    df = pd.read_csv(filename)
+    print(df)
+
+
 def main():
     # print("Hello World")
     # create_dictionary()
-    create_two_dimensional_list()
+    # create_two_dimensional_list()
+    filename =  'a.csv'
+    load_csv_file(filename)
+
     pass
 
 
